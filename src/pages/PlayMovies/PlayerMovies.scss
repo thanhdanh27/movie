@@ -1,0 +1,61 @@
+.wrapPlayMovies {
+    padding: 30px 40px;
+    .part2 {
+        border-left: 2px solid #222836;
+    }
+    .boxInfo {
+        .container-fluid {
+            padding-left: 0;
+        }
+        .posterimg {
+            width: 140px;
+            height: 200px;
+        }
+        .boxTitle {
+            margin-left: 20px;
+            .vieTitle {
+                font-size: 3.2rem;
+                color: #fff;
+            }
+            .enTitle {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 1.6rem;
+            }
+            .time {
+                font-size: 1.3rem;
+                color: #ffffff99;
+            }
+            .quality {
+                font-size: 1.3rem;
+                color: #fff;
+                font-weight: 500;
+                text-transform: uppercase;
+                background-color: #408bea;
+                width: fit-content;
+                padding: 4px 8px;
+                border-radius: 3px;
+            }
+        }
+    }
+    .desMoive {
+        margin-top: 30px;
+        padding: 15px;
+        border-bottom: solid 3px rgba(255, 255, 255, 0.08);
+        border-top: solid 3px rgba(255, 255, 255, 0.08);
+        li {
+            margin-right: 15px;
+            font-size: 1.4rem;
+            padding: 5px 7px;
+            cursor: pointer;
+            &.active {
+                color: #fff;
+                font-weight: 500;
+                background-color: #991b1b;
+                border-radius: 3px;
+            }
+        }
+    }
+    .param {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,96 @@
+.wrapPoster {
+    margin-right: 16px;
+
+    .posterMovie {
+        cursor: pointer;
+        .imgPoster {
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            .imgThumb {
+                z-index: 1;
+                transition: all ease-out 0.2s;
+            }
+            &:hover .imgThumb {
+                transform: scale(1.2);
+                filter: blur(2px) brightness(0.4);
+            }
+            &:hover .playImg {
+                display: block;
+            }
+        }
+        .tagPoster {
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 700;
+            background-color: #06ad0c;
+            padding: 4px;
+        }
+        .ratingPoster {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            right: 0;
+            background-color: #24292d;
+            border-radius: 15px;
+            padding: 2px 8px;
+            .iconRating {
+                color: #ffd600;
+                font-size: 1.2rem;
+                margin-right: 5px;
+            }
+            .pointRating {
+                font-size: 1.2rem;
+                color: #fff;
+                margin-left: 4px;
+            }
+        }
+        .playHover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 99;
+            transform: translateY(-50%) translateX(-50%);
+            .playImg {
+                display: none;
+                width: 60px;
+                transition: all ease-in 0.4s;
+                animation: showPlay ease-in 0.4s forwards;
+            }
+        }
+    }
+    .desPoster {
+        background-color: #1f2937;
+        padding: 5px;
+        .vieTitle {
+            font-size: 1.4rem;
+            color: #fff;
+            transition: all linear 0.1s;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            &:hover {
+                color: #d98a5e;
+            }
+        }
+        .enTitle {
+            font-size: 1.2rem !important;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}
+@keyframes showPlay {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(0.7);
+    }
+}

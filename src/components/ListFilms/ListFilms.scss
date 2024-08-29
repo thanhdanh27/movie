@@ -1,0 +1,27 @@
+.movieTheatersFilms {
+    position: relative;
+    margin-top: 60px;
+    border-bottom: 1px solid #242a38;
+    .seeMore {
+        position: absolute;
+        top: -5px;
+        right: 60px;
+        a {
+            font-size: 1rem;
+            color: #fff;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 2px 7px;
+            background-color: #991b1b;
+            border-radius: 4px;
+        }
+    }
+    h3 {
+        border-left: 2px solid #991b1b;
+        padding-left: 8px;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+}

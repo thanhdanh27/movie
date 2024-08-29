@@ -1,0 +1,23 @@
+.filterAlphabet {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #222836;
+    margin-top: 15px;
+    li {
+        width: calc(100% / 27);
+        text-align: center;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #222836;
+
+        &:hover {
+            border-bottom: 1px solid #d98a5e;
+        }
+        &:hover a {
+            color: #d98a5e;
+        }
+    }
+    li a {
+        padding: 0 20px;
+        font-size: 1.4rem;
+    }
+}
