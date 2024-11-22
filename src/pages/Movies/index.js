@@ -27,6 +27,7 @@ function Movies(props) {
         swipeToSlide: false,
         arrows: false,
     };
+
     const { id1, id2 } = useParams();
 
     const [currentPage, setCurrentPage] = useState(1);
